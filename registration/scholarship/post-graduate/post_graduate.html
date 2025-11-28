@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoba Adebanjo Foundation - Post-Graduate Registration</title>
+    <link rel="stylesheet" href="./post_graduate.css">
+    <script>
+        // Function to trigger file input click
+        function triggerFileInput() {
+            document.getElementById('transcriptInput').click();
+        }
+
+        // Function to update the button text when a file is selected
+        function updateFileName() {
+            const fileInput = document.getElementById('transcriptInput');
+            const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : "No file chosen";
+            document.getElementById('fileNameDisplay').innerText = fileName;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>Post-Graduate Registration</header>
+
+        <form action="https://wonderchildforkids.com/oa-foundation/postgraduate/register.php" method="POST" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Post-graduate category</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="input" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Class</label>
+                            <select name="class" class="input" required>
+                                <option value="Master's Degree">Master's Degree</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                          
+                        <div class="input-field">
+                            <label>Name of Post-Graduate School</label>
+                            <input type="text" name="postgradSchool" placeholder="Enter your post-graduate school" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Course</label>
+                            <input type="text" name="course" placeholder="Enter your course" required>
+                        </div>
+                     
+                        <div class="input-field">
+                            <label>Specializing in</label>
+                            <input type="text" name="specializing" placeholder="Enter what you are specializing in" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Started Post-Graduate Program</label>
+                            <input type="date" name="startPostgrad" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ending Post-Graduate Program</label>
+                            <input type="date" name="endPostgrad" required>
+                        </div>
+
+                        <div class="drag-area">
+                            <label>Transcript of University Certificate</label>
+                            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                            <div class="header">Drag And Drop to Upload File</div>
+                            <span>Or</span>
+                            <button type="button" class="btn2" onclick="triggerFileInput()">Browse File</button>
+                            <input type="file" name="transcript" id="transcriptInput" required hidden onchange="updateFileName()">
+                            <div id="fileNameDisplay" style="margin-top: 10px;">No file chosen</div>
+                        </div>                   
+
+                        <button type="submit" class="submit">
+                            <span class="submit-button">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

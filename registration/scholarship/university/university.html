@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoba Adebanjo Foundation</title>
+    <link rel="stylesheet" href="../university/university.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>Registration</header>
+
+        <!-- Form for university registration -->
+        <form action="https://wonderchildforkids.com/oa-foundation/university/register.php" method="POST" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">University Category</span>
+
+                    <div class="fields">
+
+                        <!-- Email Address Field -->
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Full Name Field -->
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Date of Birth Field -->
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+
+                        <!-- Gender Field -->
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="input" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <!-- Class Field -->
+                        <div class="input-field">
+                            <label>Class</label>
+                            <select name="class" class="input" required>
+                                <option value="100l">100l</option>
+                                <option value="200l">200l</option>
+                                <option value="300l">300l</option>
+                                <option value="400l">400l</option>
+                                <option value="500l">500l</option>
+                            </select>
+                        </div>
+
+                        <!-- Phone Number Field -->
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <!-- University Name Field -->
+                        <div class="input-field">
+                            <label>Name of University</label>
+                            <input type="text" name="universityName" placeholder="Enter university name" required>
+                        </div>
+
+                        <!-- Course Field -->
+                        <div class="input-field">
+                            <label>Course Studying</label>
+                            <input type="text" name="course" placeholder="Enter your course name" required>
+                        </div>
+
+                        <!-- Start Date Field -->
+                        <div class="input-field">
+                            <label>Start Date of University</label>
+                            <input type="date" name="startUniversity" required>
+                        </div>
+
+                        <!-- End Date Field -->
+                        <div class="input-field">
+                            <label>End Date of University</label>
+                            <input type="date" name="endUniversity" required>
+                        </div>
+
+                        <!-- File Upload (Transcript) -->
+                        <div class="input-field">
+                            <label>Result Transcript</label>
+                            <div class="drag-area">
+                                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                <div class="header">Drag And Drop to Upload File</div>
+                                <span>Or</span>
+                                <!-- Visible file input, properly linked to the button -->
+                                <input type="file" name="transcript" id="fileInput" required>
+                                <button type="button" id="browseButton" class="btn2">Browse File</button>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="input-field">
+                            <button type="submit" class="submit">
+                                <span class="submit-button">Submit</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Script to link browse button with file input -->
+    <script>
+        document.getElementById("browseButton").addEventListener("click", function() {
+            document.getElementById("fileInput").click();
+        });
+    </script>
+
+</body>
+</html>

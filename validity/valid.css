@@ -1,0 +1,17 @@
+
+body {
+    background:  
+    url(../pictures/pexels-timmossholder-974314.jpg) center/cover no-repeat;
+    min-height: 70vh;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+.text_box{
+    display: flex;
+    justify-content: center; 
+    padding: 10px 10px;
+    font-size: 40px;
+    color: rgb(9, 72, 209);
+}
+

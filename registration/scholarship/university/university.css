@@ -1,0 +1,202 @@
+
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background:   linear-gradient(rgba(5, 156, 143, 0.5), rgb(3, 53, 74));  
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: transparent;
+    box-shadow: 0 5px 10px rgb(3, 50, 138);
+}
+.container{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color:  rgb(1, 20, 40);
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+   border-radius: 8px;
+   background-color: rgb(66, 108, 207);
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: transparent;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    padding: 40px 30px;
+    color: rgb(3, 70, 99);
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 -15px);
+    background-color: transparent;
+    flex-direction: column;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(30, 133, 185);
+}
+.input-field label{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(1, 20, 40);
+}
+.input-field input{
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 8, 143);
+  color: black;
+  height: 42px;
+  border: 1px solid rgb(52, 165, 246);
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+.input{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(63, 41, 0);
+    color: black;
+    height: 42px;
+    border: 1px solid wheat;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgb(180, 195, 240);
+}
+.input-field input[type="date"]{
+    color: rgb(10, 63, 112);
+}
+.input-field input[type="date"]{
+    color: rgb(12, 27, 114);
+}
+.container form .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: rgb(2, 43, 86);
+    margin: 25px 0;
+    background-color: rgb(73, 152, 216);
+    transition: all 0.3s linear;
+}
+.container form .submit:hover{
+    background-color: rgb(136, 18, 239);
+}
+
+@media (max-width: 750px){
+   form .fields .input-field{
+    width: calc(100% / 2 -15px);
+   }
+   .container form{
+    overflow-y: scroll;
+   }
+   .container form::-webkit-scrollbar{
+    display: none;
+   }
+}
+@media (max-width: 550px){
+    .container form .fields{
+        display: flex;
+    }
+    form .fields .input-field{
+        width: 100%;
+       }
+}
+
+.drag-area{
+    border: 2px dashed  rgb(37, 100, 217);
+    /* height: 500px;
+    width: 700px; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.darg-area.active{
+    border: 3px solid #013463;
+}
+.drag-area .icon{
+    font-size: 80px;
+    color: rgb(42, 180, 211);
+}
+.drag-area header{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.drag-area span{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(79, 168, 232);
+    margin: 10px 0 15px 0;
+}
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: rgb(34, 159, 188);
+    color: rgb(25, 64, 128);
+    cursor: pointer;
+}
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+

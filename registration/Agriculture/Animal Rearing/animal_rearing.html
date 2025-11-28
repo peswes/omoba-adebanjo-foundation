@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoba Adebanjo Foundation - Animal Rearing Registration</title>
+    <link rel="stylesheet" href="./animal_rearing.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="https://wonderchildforkids.com/oa-foundation/animalrearing/register.php" method="POST">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Animal Rearing Category</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="input" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State of Origin</label>
+                            <input type="text" name="stateOfOrigin" placeholder="Enter your state of origin" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Tools Needed & Why</label>
+                            <input type="text" name="toolsNeeded" placeholder="Enter with proper description" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit">
+                        <span class="submit-button">Submit</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

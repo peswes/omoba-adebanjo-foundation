@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoba Foundation</title>
+    <link rel="stylesheet" href="./secondary.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="https://wonderchildforkids.com/oa-foundation/secondary/register.php" method="POST" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Secondary school category</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Full name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date Of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Class</label>
+                            <select name="class" required>
+                                <option value="JSS1">JSS1</option>
+                                <option value="JSS2">JSS2</option>
+                                <option value="JSS3">JSS3</option>
+                                <option value="SSS1">SSS1</option>
+                                <option value="SSS2">SSS2</option>
+                                <option value="SSS3">SSS3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                          
+                        <div class="input-field">
+                            <label>Name Of Secondary School</label>
+                            <input type="text" name="schoolName" placeholder="Enter secondary school name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Started Secondary School</label>
+                            <input type="date" name="startSecondarySchool" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ending Secondary School</label>
+                            <input type="date" name="endSecondarySchool" required>
+                        </div>
+
+                        <div class="drag-area">
+                            <label>Result Transcript</label>
+                            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                            <div class="header">Drag And Drop to Upload File</div>
+                            <span>Or</span>
+                            <button class="btn2">Browse File</button>
+                            <input type="file" name="transcript" accept="image/*,application/pdf" required>
+                        </div>                   
+
+                        <button type="submit" class="submit">
+                            <span class="submit-button">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

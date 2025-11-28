@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoba Adebanjo - SS3 Coaching Registration</title>
+    <link rel="stylesheet" href="./coaching.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="https://wonderchildforkids.com/oa-foundation/ss3coaching/register.php" method="POST" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">SS3 Coaching Category</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="input" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Class</label>
+                            <select name="class" class="input" required>
+                                <option value="" disabled selected>Select Class</option>
+                                <option value="Science">Science</option>
+                                <option value="Art">Art</option>
+                                <option value="Commercial">Commercial</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Started Secondary School</label>
+                            <input type="date" name="startSchool" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ending Secondary School</label>
+                            <input type="date" name="endSchool" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name of Secondary School</label>
+                            <input type="text" name="secondarySchool" placeholder="Enter the name of your secondary school" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Result Transcript</label>
+                            <input type="file" name="transcript" required>
+                        </div>                   
+
+                        <button type="submit" class="submit">
+                            <span class="submit-button">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../primary/primary.js"></script>
+</html>
