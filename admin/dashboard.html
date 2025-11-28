@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Admin DashBoard | Omobaadebanjofoundation</title>
+
+    <meta name="description" content="" />
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="./assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="./assets/vendor/js/helpers.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+              <a href="index.html" class="app-brand-link">
+                <i class="fa-solid fa-user-tie fs-4 mr-2"></i>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">Admin</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            <!-- Layouts -->
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Applicants Data</span></li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="fa-solid fa-school menu-icon tf-icons"></i>
+                <div data-i18n="Layouts">Sectors</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="./sectors/animal-rearing.html" class="menu-link">
+                    <div data-i18n="Without menu">Animal Rearing</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/health.html" class="menu-link">
+                    <div data-i18n="Without navbar">Health</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/plant-production.html" class="menu-link">
+                    <div data-i18n="Container">Plant Production</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/post-graduate.html" class="menu-link">
+                    <div data-i18n="Fluid">Postgraduate</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/primary.html" class="menu-link">
+                    <div data-i18n="Fluid">Primary</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/secondary.html" class="menu-link">
+                    <div data-i18n="Fluid">Secondary</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/ss3-coaching.html" class="menu-link">
+                    <div data-i18n="Fluid">Ss3 coaching</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/university.html" class="menu-link">
+                    <div data-i18n="Fluid">University</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="./sectors/women-empowerement.html" class="menu-link">
+                    <div data-i18n="Blank">Women Empowerement</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="./assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/login.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+             <!-- alert -->
+            <div
+            class="bs-toast toast fade hide bg-primary"
+            id="toast-alert"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <i class="bx bx-bell me-2"></i>
+              <div class="me-auto fw-semibold">From DashBoard</div>
+              <small>Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Check The left side of the dashboard. There, you will see a dropdown - 'Sectors' on the menu. Click on the dropdown and view the applicants data under your preferred sector.
+            </div>
+          </div>
+          <!-- alert end -->
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <div class="col-lg-8 mb-4 order-0">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-primary">Welcome Admin! 😃</h5>
+                          <p class="mb-4">
+                            Here is your <span class="fw-bold">Dashboard</span>. You can check all form data filled by the applicants from here. Do not loose your admin password.
+                          </p>
+
+                          <a href="javascript:;" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('toast-alert').classList.add('show')">View Applicants Data</a>
+                          <a href="javascript:;" class="btn btn-sm btn-outline-primary" onclick="window.location.reload()">Refresh Dashboard</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div class="card-body pb-0 px-0 px-md-4">
+                          <img
+                            src="./assets/img/illustrations/man-with-laptop-light.png"
+                            height="140"
+                            alt="View Badge User"
+                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                            data-app-light-img="illustrations/man-with-laptop-light.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 order-1">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                                <i class="fa-solid fa-database fs-3 text-success"></i>
+                            </div>
+
+                          </div>
+                          <span class="fw-semibold d-block mb-1">Postgraduate</span>
+                          <h3 class="card-title mb-2" id="no-applicants-postgraduate"></h3>
+                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> No of applicants</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                                <i class="fa-solid fa-database fs-3 text-primary"></i>
+                            </div>
+
+                          </div>
+                          <span>University</span>
+                          <h3 class="card-title text-nowrap mb-1" id="no-applicants-university"></h3>
+                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> No of applicants</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                  <div class="row">
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body w-auto">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                                <i class="fa-solid fa-database fs-3 text-warning"></i>
+                            </div>
+
+                          </div>
+                          <span class="d-block mb-1 w-auto">Women Empowerement</span>
+                          <h3 class="card-title text-nowrap mb-2" id="no-applicants-women"></h3>
+                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> No of applicants</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- start card -->
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                                <i class="fa-solid fa-database fs-3 text-info"></i>
+                            </div>
+
+                          </div>
+                          <span class="fw-semibold d-block mb-1">Health</span>
+                          <h3 class="card-title mb-2" id="no-applicants-health"></h3>
+                          <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> No of applicants</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end card -->
+              </div>
+
+            </div>
+
+            <!-- / Content -->
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+
+          <!-- Bootstrap Dark Table -->
+          <div class="card">
+            <h5 class="card-header">No of Applicants / Sector</h5>
+            <div class="table-responsive text-nowrap">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th>Sector</th>
+                    <th>No. of Applicants</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                  <tr>
+                    <td><i class="fa-solid fa-paw"></i>  <strong>Animal Rearing</strong></td>
+                    <td id="table-no-animal"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/animal-rearing.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-notes-medical"></i>  <strong>Health</strong></td>
+                    <td id="table-no-health"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/health.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-notes-medical"></i>  <strong>Plant Production</strong></td>
+                    <td id="table-no-plant"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/plant-production.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-graduation-cap"></i>  <strong>Post Graduate</strong></td>
+                    <td id="table-no-post-graduate"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/post-graduate.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-children"></i>  <strong>Primary</strong></td>
+                    <td id="table-no-primary"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/primary.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-brands fa-black-tie"></i>  <strong>Secondary</strong></td>
+                    <td id="table-no-secondary"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/secondary.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-chalkboard-user"></i>  <strong>ss3 Coaching</strong></td>
+                    <td id="table-no-ss3"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/ss3-coaching.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-brands fa-google-scholar"></i>  <strong>University</strong></td>
+                    <td id="table-no-university"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/university.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-venus"></i>  <strong>Women Empowerement</strong></td>
+                    <td id="table-no-women"></td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./sectors/women-empowerement.html"
+                            ><i class="bx bx-eye-alt me-1"></i> View</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--/ Bootstrap Dark Table -->
+
+
+              <!-- Responsive Table -->
+              <!-- <div class="card">
+                <h5 class="card-header">All Applicants</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr class="text-nowrap">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Phone No</th>
+                        <th>Address</th>
+                        <th>Sector</th>
+                        <th>Next of Kin</th>
+                        <th>Instituition</th>
+                        <th>Age</th>
+                        <th>Reason for Application</th>
+                        <th>Next of kin contact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+              <!--/ Responsive Table -->
+        </div>
+        <!-- / Layout page -->
+
+      </div>
+
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="./assets/vendor/libs/popper/popper.js"></script>
+    <script src="./assets/vendor/js/bootstrap.js"></script>
+    <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="./assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="./assets/js/dashboards-analytics.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+<script>
+    // authenticate
+        window.onload = function() {
+
+            const fetchNo = async (url,id) => {
+                fetch(url, {
+                    method: 'GET',
+                    cache: 'no-cache',
+                }).then(
+                    res => {
+                        return res.json()
+                    }
+                ).then(
+                    json => {
+                        document.getElementById(id).innerHTML = json.length
+                    }
+                ).catch(
+                    err => console.error('error: ', console.log(err.message))
+                )
+            }
+
+            // updare all dash no
+            fetchNo('https://wonderchildforkids.com/oa-foundation/postgraduate/fetch_users.php','no-applicants-postgraduate')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/university/fetch_users.php','no-applicants-university')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/womenempowerment/fetch_users.php','no-applicants-women')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/health/fetch_users.php','no-applicants-health')
+
+            // update all table no
+            fetchNo('https://wonderchildforkids.com/oa-foundation/postgraduate/fetch_users.php','table-no-post-graduate')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/plantproduction/fetch_users.php','table-no-plant')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/health/fetch_users.php','table-no-health')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/animalrearing/fetch_users.php', 'table-no-animal')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/university/fetch_users.php','table-no-university')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/ss3coaching/fetch_users.php', 'table-no-ss3')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/secondary/fetch_users.php','table-no-secondary')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/primary/fetch_users.php','table-no-primary')
+            fetchNo('https://wonderchildforkids.com/oa-foundation/womenempowerment/fetch_users.php', 'table-no-women')
+
+            // get token with expiry
+            function getItemWithExpiry(key) {
+            const itemStr = localStorage.getItem(key);
+
+            if (!itemStr) {
+                return null;
+            }
+
+            const item = JSON.parse(itemStr);
+            const now = new Date();
+
+            // Check if the item has expired
+            if (now.getTime() > item.expiry) {
+                localStorage.removeItem(key); // Remove expired item
+                return null;
+            }
+
+            return item.value;
+            }
+
+            const isAuthenticated = getItemWithExpiry('isAuthenticated');
+
+        if (!isAuthenticated) {
+            alert("Access denied. Please log in.");
+            window.location.href = "login.html"; // Redirect to login if not authenticated
+        }
+        };
+  </script>
+</html>
